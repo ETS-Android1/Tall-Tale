@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.IncreaseGoalFragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goal_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/Invisible"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="40dp"
+        app:contentPadding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/second_constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_background"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/prompt_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:maxEms="10"
+                android:text="Wow!\nYou reached your goal!\nGood work!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/prompt_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:maxEms="15"
+                android:text="Way to stick it to the illiteracy epidemic.\n\nInstead of getting a life, why not put on a hat? It will make you look taller, and then you can keep reading instead of living life!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prompt_text" />
+
+
+            <TextView
+                android:id="@+id/prompt_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:maxEms="15"
+                android:text="\nHow tall should your hat be?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prompt_text3" />
+
+
+            <TextView
+                android:id="@+id/prompt_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:maxEms="15"
+                android:text="Legal Notice: \nWe can't promise that the hat will be stylish."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/view_line2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_______________________"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prompt_text4" />
+
+            <TextView
+                android:id="@+id/view_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="____________________"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seek_bar_inches" />
+
+
+
+            <TextView
+                android:id="@+id/feet_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1'"
+                android:textColor="@color/text_strong"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/seek_bar_feet"
+                app:layout_constraintEnd_toEndOf="@id/seek_bar_feet"
+                app:layout_constraintTop_toBottomOf="@id/view_line" />
+
+
+            <SeekBar
+                android:id="@+id/seek_bar_feet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/seek_bar_background"
+                android:thumb="@drawable/seek_bar_thumb"
+                app:layout_constraintTop_toBottomOf="@id/feet_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/inches_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0&quot;"
+                android:textColor="@color/text_strong"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/seek_bar_inches"
+                app:layout_constraintEnd_toEndOf="@id/seek_bar_inches"
+                app:layout_constraintTop_toBottomOf="@id/seek_bar_feet" />
+
+
+            <SeekBar
+                android:id="@+id/seek_bar_inches"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/seek_bar_background"
+                android:thumb="@drawable/seek_bar_thumb"
+                app:layout_constraintTop_toBottomOf="@id/inches_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+            <ImageButton
+                android:id="@+id/bt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/form_button_background_red"
+                android:elevation="60dp"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                android:src="@drawable/ic_close_button_form"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prompt_text2"/>
+
+            <ImageButton
+                android:id="@+id/bt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/form_button_background_green"
+                android:elevation="60dp"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                android:src="@drawable/ic_check_button_form"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prompt_text2"
+                android:onClick="confirmSelection"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
